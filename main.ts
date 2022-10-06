@@ -1,7 +1,8 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 0) {
         RingbitCar.forward()
-    } else {
+    }
+    if (receivedNumber == 1) {
         RingbitCar.brake()
     }
 })

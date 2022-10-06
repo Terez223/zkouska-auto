@@ -3,6 +3,15 @@ radio.onReceivedNumber(function (receivedNumber) {
         RingbitCar.forward()
     }
     if (receivedNumber == 1) {
+        RingbitCar.back()
+    }
+    if (receivedNumber == 2) {
+        RingbitCar.turnleft()
+    }
+    if (receivedNumber == 3) {
+        RingbitCar.turnright()
+    }
+    if (receivedNumber == 4) {
         RingbitCar.brake()
     }
 })

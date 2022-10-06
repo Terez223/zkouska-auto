@@ -1,10 +1,9 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    let recivedNumber = 0
-    if (recivedNumber == 0) {
+    if (receivedNumber == 0) {
         RingbitCar.forward()
-    }
-    if (recivedNumber == 1) {
-        RingbitCar.back()
+    } else {
+        RingbitCar.brake()
     }
 })
 radio.setGroup(1)
+RingbitCar.init_wheel(AnalogPin.P0, AnalogPin.P1)
